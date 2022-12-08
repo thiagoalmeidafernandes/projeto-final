@@ -18,9 +18,23 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatChipsModule } from '@angular/material/chips';
+import { CardComponent } from './card/card.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatInputModule } from '@angular/material/input';
+import { MatSliderModule } from '@angular/material/slider';
+import { DatapickerComponent } from './datapicker/datapicker.component';
+import { MatCommonModule } from '@angular/material/core';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, TabsComponent, FormComponent],
+  declarations: [
+    AppComponent,
+    MenuComponent,
+    TabsComponent,
+    FormComponent,
+    CardComponent,
+    DatapickerComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -34,6 +48,12 @@ import { MatChipsModule } from '@angular/material/chips';
     MatIconModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatDatepickerModule,
+    MatChipsModule,
+    MatAutocompleteModule,
+    MatInputModule,
+    MatSliderModule,
+    MatCommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
